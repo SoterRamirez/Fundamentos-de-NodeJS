@@ -16,16 +16,32 @@ Como funciona desde los fundamentos, core y como podemos tulizarlo para producci
 
 ### Características de NodeJS
 
-Concurrencia
+#### Concurrencia
 
 - Todas sus entradas son Monohilo, con entradas y salidadas asíncronas.
 - Un proceso por cada núcleo del procesador.
 
 Esto siguiente es super importante para Node.
 
-Motor v8
+#### Motor v8
 
 - Entorno de ejecución de JS creado por Google, y libre desde 2008.
 - Escrito en C++
 - Convierte JS en código máquina en lugar de interpretarlo en tiempo real.
+
+El motor v8 lo que hace es convertir código js a codigo maquina y es extremadamente rápido, este código maquina nos va a permitir que nuestras aplicaciones por un lado tienen un error de sintaxis fallen en el momento que iniciamos y no en el momento que llegaste a ese punto de sintaxis, por lo cual nos muchísima robustación a nuestro código. Lo segundo es que al estar escrito en c++ va a ser extremadamente rápido.
+
+Este motor es libre OpenSource 
+
+#### Módulos
+
+Todo lo que no sea sintaxis de programación, son módulos. Muchos módulos vienen por defecto en el paquete de Node. Puedes crear tus propios módulos.
+
+
+
+#### Orientado a eventos
+
+Hay un buble de eventos que se ejecutan constantemente, puedes oriantar tu código de forma reactiva.
+
+Cuando suseda X cosa, que se ejecute esto otro.
 
