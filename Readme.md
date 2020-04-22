@@ -1,3 +1,5 @@
+# Fundamentos de NodeJS
+
 ## Node: orígenes y filosofía
 
 Sabias que NodeJs es una de las formas mas rapidas de desarrollar ejecutar y correr código en el servidor de forma muy escaladle.
@@ -45,3 +47,14 @@ Hay un buble de eventos que se ejecutan constantemente, puedes oriantar tu códi
 
 Cuando suseda X cosa, que se ejecute esto otro.
 
+## EventLoop: asíncrona por diseño
+
+Imagines que un Eventloop es un circulo que va dando vueltas y vueltas.
+
+![img](https://i.ibb.co/j42621b/event-loop.png)
+
+**Event Queue:** Contiene todos los eventos que se generan por nuestro código (Funciones, peticiones, etc.), estos eventos quedan en una cola que van pasando uno a uno al Event Loop.
+
+**Event Loop:** Se encarga de resolver los eventos ultra rápidos que llegan desde el Event Queue. En caso de no poder resolverse rápido, enviá el evento al Thread Pool.
+
+**Thread Pool:** Se encarga de gestionar los eventos de forma asíncrona. Una vez terminado lo devuelve al Event Loop. El Event Loop vera si lo pasa a Event Queue o no.
